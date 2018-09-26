@@ -1,0 +1,54 @@
+body{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bac.jpg);
+	font-size: 0;
+}
+.container{
+	position: relative;
+	width: 80%;
+	height: 700px;
+	margin: 5% auto;
+	/*background: deepskyblue;*/
+}
+.container .item{
+	position: absolute;
+	height:100%;
+	font-size: 40px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 15px;
+}
+
+.container .item h1{
+	text-align: center;
+	line-height: 100px;
+	border-bottom: 2px dotted red;
+}
+.container .left{
+	/*border: 5px solid #88b0b2;*/
+	width: 20%;
+	/*background: #eee;*/
+	left: 0;
+}
+.container .middle{
+	width: 55%;
+	/*background: blue;*/
+	left: 22.5%;
+}
+.container .right{
+	width: 20%;
+	/*background: green;*/
+	right: 0;
+}
+.logo{
+	/*background: red;*/
+}
+.logo .circle{
+	width: 200px;
+	height: 50px;
+	border-radius: 30px;
+	background: rgba(255,255,255,0.8);
+	display: block;
+	margin: 0 auto;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<!--分开几个栏目，分别是待处理，正在处理，已处理  比例是262
+	栏目是遮罩蒙版 带一定透明度 有边框 鼠标移入边框有特效 边框变粗 像荧光一样
+	
+	给桌面主文件夹加上一个存放位置 鼠标移入这个位置要有特效 边框奔跑
+	
+	背景是大圣归来
+	有启动音乐
+	有鼠标特效
+	
+	有水波荡漾特效
+	
+	
+	 
+	-->
+	<div class="container">
+		<div class="left item"
+			onmouseleave="toggle(this,false)"
+			onmouseenter="toggle(this,true)">
+			<h1>待处理</h1>
+		</div>
+		<div class="middle item"
+			onmouseleave="toggle(this,false)"
+			onmouseenter="toggle(this,true)">
+			<h1>在处理</h1>
+		</div>
+		<div class="right item"
+			onmouseleave="toggle(this,false)"
+			onmouseenter="toggle(this,true)">
+			<h1>已处理</h1>
+		</div>
+	</div>
+	<div class="logo">
+		<!--<img src="img/jingu.png" 
+			onmouseleave="sizeChange(this,false)"
+			onmouseenter="sizeChange(this,true)"/>-->
+		<div class="circle"
+			onmouseleave="toggle(this,false)"
+			onmouseenter="toggle(this,true)"></div>
+	</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			
+		}
+		function toggle(item,type){
+			if(type){
+				$(item).stop(true).animate({opacity:0.5});
+			}else{
+				$(item).stop(true).animate({opacity:1});				
+			}
+		}
+		function sizeChange(item,type){
+			if(type){
+				$(item).stop(true).animate({opacity:0});
+			}else{
+				$(item).stop(true).animate({opacity:1});				
+			}
+		}
+	</script>
+</body>
+</html>
